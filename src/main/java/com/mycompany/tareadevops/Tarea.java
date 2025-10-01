@@ -10,4 +10,51 @@ package com.mycompany.tareadevops;
  */
 public class Tarea {
     
+private String nombre;
+private String descripcion;
+private String autor;
+
+
+public Tarea(){
+
 }
+
+
+
+public Tarea(String nombre,String autor,String descipcion){
+this.nombre=nombre;
+this.autor=autor;
+this.descripcion=descripcion;
+}
+    
+        public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+    
+public String showTarea(){
+
+return "Tarea{"+"nombre: "+nombre+", descripcion: "+descripcion+", autor: "+autor+"}";
+}
+
+}
+
